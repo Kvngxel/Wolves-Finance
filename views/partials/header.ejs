@@ -1,77 +1,20 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>TheKingsBlog</title>
-    <script src="/js/jquery-3.6.0.js"></script> <!-- jQuery-->
-    <link rel="stylesheet" href="/css/styles.css"> <!--Main CSS-->
-    <link rel="stylesheet" href="/css/bootstrap.css"> <!--Bootstrap-->
-    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> <!-- password eye-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Mulish&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;1,200;1,300&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;1,200;1,300&display=swap" rel="stylesheet">
-  </head>
+<html lang="en-US" class="no-js">
 
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky">
+    <title>Wolves Finance &#8211; Financial &amp; Wolves Finance Site</title>
 
-      <div class="container-fluid">
-        <a class="navbar-brand"  href="/">
-        <img src="/images/kingsBlog.png" alt="" width="190" height="50">
-        </a>
+    <link rel='stylesheet' href='plugins/revslider/public/assets/css/settings.css' type='text/css' media='all'>
+    <link rel='stylesheet' href='css/style-core.css' type='text/css' media='all'>
+    <link rel='stylesheet' href='css/bootstrap.css' type='text/css' media='all'>
+    <link rel='stylesheet' href='css/styles.css' type='text/css' media='all'>
+    <link rel='stylesheet' href='css/financity-style-custom.css' type='text/css' media='all'>
+    <link rel='stylesheet' href='plugins/goodlayers-core/plugins/combine/style.css' type='text/css' media='all'>
+    <link rel='stylesheet' href='plugins/goodlayers-core/include/css/page-builder.css' type='text/css' media='all'>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse hey justify-content-end" id="navbarSupportedContent">
-          <ul  class="navbar-nav navbar-margin">
-            <li class="nav-item nav-margin">
-              <a class="nav-link <%= home %>" aria-current="page" href="/">Home</a>
-            </li>
-            <li class="nav-item nav-margin">
-              <a class="nav-link <%= compose %>" href="/compose">Compose</a>
-            </li>
-            <li class="nav-item nav-margin">
-              <a class="nav-link <%= about %>" href="/about">About</a>
-            </li>
-            <li class="nav-item nav-margin dropdown">
-              <a class="nav-link dropdown-toggle account" href="/myProfile" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <%= account %>
-              </a>              
-                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">                 
-                  
-                  <% if ( auth  === true){ %>
-                    <% if ( createdProfile  === true){ %>
-                    <li><a class="dropdown-item active" href="/myProfile"> <img class="favicon" src="/favicon/user.png"> Profile</a></li>
-                    <% } else { %>
-                    <li><a class="dropdown-item active" href="/profile"> <img class="favicon" src="/favicon/user.png"> Profile</a></li>                      
-                    <% } %>
-                    <li><a class="dropdown-item" href="/compose"> <img class="favicon" src="/favicon/posts.png"> Compose</a></li>
-                    <% if ( userStatus  === true){ %>
-                      <li><a class="dropdown-item" href="/admin"> <img class="favicon" src="/favicon/admin.png"> Admin Page</a></li>                      
-                    <% } %>
-                    <li><a class="dropdown-item" href="/logout"> <img class="favicon" src="/favicon/logout.png"> Logout</a></li>                                                      
-                  <% } else { %>
-                    <li><a class="dropdown-item" href="/register"> <img class="favicon" src="/favicon/create.png"> Create Account</a></li>
-                    <li><a class="dropdown-item" href="/login"> <img class="favicon" src="/favicon/login.png"> Login</a></li>
-                    <!-- <li><a class="dropdown-item" href="/logout"> <img class="favicon" src="/favicon/logout.png"> Logout</a></li>                                                    -->
-                  <% } %>
-                               
-                </ul>
-            </li>                
-          </ul>
-          <!-- <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form> -->
-        </div>
-      </div>
-    </nav>
-    <div class="nav-div"></div>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2Cregular%2Citalic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7COpen+Sans%3A300%2C300italic%2Cregular%2Citalic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%7CAsap%3Aregular%2Citalic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic&amp;subset=latin-ext%2Clatin%2Cvietnamese%2Ccyrillic-ext%2Cgreek%2Cgreek-ext%2Ccyrillic&amp;ver=4.9.5' type='text/css' media='all'>
+
+</head>

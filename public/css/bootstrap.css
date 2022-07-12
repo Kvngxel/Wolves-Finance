@@ -634,8 +634,8 @@ progress {
   display: flex;
   flex-wrap: wrap;
   margin-top: calc(var(--bs-gutter-y) * -1);
-  /* margin-right: calc(var(--bs-gutter-x) * -.5);
-  margin-left: calc(var(--bs-gutter-x) * -.5); */
+  margin-right: calc(var(--bs-gutter-x) * -.5);
+  margin-left: calc(var(--bs-gutter-x) * -.5);
 }
 .row > * {
   flex-shrink: 0;
@@ -3306,27 +3306,27 @@ textarea.form-control-lg {
 }
 
 .btn-outline-danger {
-  color: #199aa9;
-  border-color: #1d868c;
+  color: #dc3545;
+  border-color: #dc3545;
 }
 .btn-outline-danger:hover {
   color: #fff;
-  background-color: #35b5dc;
-  border-color: #35addc;
+  background-color: #dc3545;
+  border-color: #dc3545;
 }
-/* .btn-check:focus + .btn-outline-danger, .btn-outline-danger:focus {
-  box-shadow: 0 0 0 0.25rem #35addc;
-} */
+.btn-check:focus + .btn-outline-danger, .btn-outline-danger:focus {
+  box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.5);
+}
 .btn-check:checked + .btn-outline-danger, .btn-check:active + .btn-outline-danger, .btn-outline-danger:active, .btn-outline-danger.active, .btn-outline-danger.dropdown-toggle.show {
   color: #fff;
-  background-color: #35addc;
-  border-color: #35addc;
+  background-color: #dc3545;
+  border-color: #dc3545;
 }
 .btn-check:checked + .btn-outline-danger:focus, .btn-check:active + .btn-outline-danger:focus, .btn-outline-danger:active:focus, .btn-outline-danger.active:focus, .btn-outline-danger.dropdown-toggle.show:focus {
-  box-shadow: 0 0 0 0.25rem #35addc;
+  box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.5);
 }
 .btn-outline-danger:disabled, .btn-outline-danger.disabled {
-  color: #35addc;
+  color: #dc3545;
   background-color: transparent;
 }
 
@@ -3679,9 +3679,9 @@ textarea.form-control-lg {
   background-color: #e9ecef;
 }
 .dropdown-item.active, .dropdown-item:active {
-  color: rgb(0, 0, 0);
+  color: #fff;
   text-decoration: none;
-  background-color: rgb(201, 250, 255);
+  background-color: #0d6efd;
 }
 .dropdown-item.disabled, .dropdown-item:disabled {
   color: #adb5bd;
@@ -3930,7 +3930,7 @@ textarea.form-control-lg {
 }
 
 .navbar {
-  /* position: relative; */
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -5838,20 +5838,13 @@ textarea.form-control-lg {
   opacity: 0.9;
 }
 
-
-
-/* Changed to -50px each fro left and right  */
 .carousel-control-prev {
-  left: 13px;
-  width: 80px;
+  left: 0;
 }
 
 .carousel-control-next {
-  right: 0px;
-  width: 90px;
+  right: 0;
 }
-
-
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
@@ -6966,11 +6959,9 @@ textarea.form-control-lg {
   margin-right: 0.5rem !important;
 }
 
-/* Removed for footer */
-
-/* .me-3 { 
+.me-3 {
   margin-right: 1rem !important;
-} */
+}
 
 .me-4 {
   margin-right: 1.5rem !important;
